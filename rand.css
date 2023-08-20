@@ -1,0 +1,97 @@
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 36px;
+}
+#input-area {
+    text-align: center;
+}
+#team-members {
+    text-align: center;
+}
+#label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 24px;
+    
+}
+#team-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#blue-lbl {
+    background-color: blue;
+    color: white;
+}
+#green-lbl {
+    background-color: green;
+}
+#red-lbl {
+    background-color: red;
+}
+#yellow-lbl {
+    background-color: yellow;
+    color: blue;
+}
+.label {
+    border: 1px solid black;
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.team {
+    border: 1px solid purple;
+    width: 400px;
+    text-align: center;
+    font-size: 18px;
+
+}
+.blues {
+    background-color: blue;
+    color: white;
+}
+.greens {
+    background-color: green;
+    color: white;
+}
+.reds {
+    background-color: red;
+    color: white;
+}
+.yellows {
+    background-color: yellow;
+    color: blue;
+}
+#select-btn {
+    background-color: aqua;
+    border-radius: 8px;
+}
+#team-btn {
+    background-color: aqua;
+    border-radius: 8px;
+}
+#green {
+    background-color: green;
+    color: white;
+}
+#red {
+    background-color: red;
+    color: white;
+}
+#blue {
+    background-color: blue;
+    color: white;
+}
+#yellow {
+    background-color: yellow;
+    color: blue;
+}
