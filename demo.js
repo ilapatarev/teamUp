@@ -7,7 +7,8 @@ function teamGenerator() {
     const yellowTeam=document.getElementById('yellow');
     const teamNumberInput=document.getElementById('members');
     const nameInput=document.getElementById('name');
-    const teamBtn=document.getElementById('team-btn')
+    const teamBtn=document.getElementById('team-btn');
+    const error = document.getElementById("error");
 
     
     let colors=['red', 'blue', 'green', 'yellow'];
@@ -20,7 +21,20 @@ function teamGenerator() {
     
     
     selectBtn.addEventListener('click', selectTeam);
-    teamBtn.addEventListener('click', teamMembers)
+    teamBtn.addEventListener('click', teamMembers);
+
+    teamNumberInput.addEventListener("input", function () {
+        const inputValue = teamNumberInput.value.trim();
+        if (!inputValue.match(/^[0-9]*$/)) {
+            error.textContent = "Please enter a valid number.";
+            error.style.display = "block"; // Show the error message
+            teamNumberInput.style.border = "2px solid red";
+        } else {
+            error.textContent = "";
+            error.style.display = "none"; // Hide the error message
+            teamNumberInput.style.border = "";
+        }
+    });
 
     function teamMembers(params) {
         num=Number(teamNumberInput.value);
