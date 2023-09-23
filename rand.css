@@ -13,6 +13,9 @@ header {
 #team-members {
     text-align: center;
 }
+#error {
+    text-align: center;
+}
 #label-container {
     display: flex;
     flex-direction: row;
