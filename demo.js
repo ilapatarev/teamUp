@@ -29,10 +29,14 @@ function teamGenerator() {
             error.textContent = "Please enter a valid number.";
             error.style.display = "block"; // Show the error message
             teamNumberInput.style.border = "2px solid red";
+            teamBtn.disabled=true;
+            selectBtn.disabled=true;
         } else {
             error.textContent = "";
             error.style.display = "none"; // Hide the error message
             teamNumberInput.style.border = "";
+            teamBtn.disabled=false;
+            selectBtn.disabled=false;
         }
     });
 
