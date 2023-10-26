@@ -23,6 +23,14 @@ function teamGenerator() {
     selectBtn.addEventListener('click', selectTeam);
     teamBtn.addEventListener('click', teamMembers);
 
+  
+    nameInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            selectTeam(); // Call the function
+        }
+    });
+
     teamNumberInput.addEventListener("input", function () {
         const inputValue = teamNumberInput.value.trim();
         if (!inputValue.match(/^[0-9]*$/)) {
@@ -155,5 +163,6 @@ function teamGenerator() {
 }
 
 teamGenerator();
+
 
 
