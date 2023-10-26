@@ -27,7 +27,7 @@ function teamGenerator() {
     nameInput.addEventListener('keyup', function(event) {
         if (event.key === 'Enter') {
             event.preventDefault();
-            selectTeam(); // Call the function
+            selectTeam(); 
         }
     });
 
