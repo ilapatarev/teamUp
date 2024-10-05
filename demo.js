@@ -11,7 +11,7 @@ function teamGenerator() {
     const error = document.getElementById("error");
 
     
-    let colors=['red', 'blue'];
+    let colors=['red', 'blue', 'green', 'yellow'];
     let blueMembers=0;
     let greenMembers=0;
     let redMembers=0;
