@@ -61,20 +61,29 @@ function teamGenerator() {
         if (event) {
             event.preventDefault;
         }
-        let smt=name.value;
-        console.log(teamNumber);
+        let playerName=name.value.trim();
+        //console.log(teamNumber);
+        if (playerName === '') {
+            name.value = ''; // Clear the input field just in case of spaces
+            console.log('Empty name detected. Player not added.');
+            return; // Stop the function here
+        }
+
+
+
+
         let result=team();
         if (result==='blue') {
-            createElement('li', blueTeam, `${smt}`, ['blues']);
+            createElement('li', blueTeam, `${playerName}`, ['blues']);
             blueMembers+=1;
         } else if (result==='green') {
-            createElement('li', greenTeam, `${smt}`, ['greens']);
+            createElement('li', greenTeam, `${playerName}`, ['greens']);
             greenMembers+=1;
         } else if (result==='red') {
-            createElement('li', redTeam, `${smt}`, ['reds']);
+            createElement('li', redTeam, `${playerName}`, ['reds']);
             redMembers+=1;
         } else if (result==='yellow') {
-            createElement('li', yellowTeam, `${smt}`, ['yellows']);
+            createElement('li', yellowTeam, `${playerName}`, ['yellows']);
             yellowMembers+=1
         }
         name.value='';
@@ -163,6 +172,7 @@ function teamGenerator() {
 }
 
 teamGenerator();
+
 
 
 
